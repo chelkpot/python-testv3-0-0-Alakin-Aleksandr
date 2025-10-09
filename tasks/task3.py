@@ -2,6 +2,7 @@
 
 def solve():
 # Ниже пишите решение задачи
+    n=int(input())
     sotni = n // 100
     ostatok = n % 100
     dvadcat = ostatok // 20
