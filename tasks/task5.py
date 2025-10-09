@@ -2,14 +2,15 @@
 
 def solve():
 # Ниже пишите решение задачи
-    n = int(input("Ввеедите кол-во минут: "))
-    n = n%86400
-    h = n//3600
-    m = n%3600//60
-    s = n%60
-    m_str = "0" + str(m) if m < 10 else str(m)
-    s_str = "0" + str(s) if s < 10 else str(s)
-    time= ((str(h) + ":") + (str(m_str) + ":") + (str(s_str)))
+    n = int(input())
+    h = n // 3600
+    m = (n % 3600) // 60
+    s = n % 60
+    min_tens = m // 10
+    min_ones = m % 10
+    sec_tens = s // 10
+    sec_ones = s % 10
+    time= ((str(h) + ":") + (str(min_tens)) + (str(min_ones) + ":") + (str(sec_tens)) + (str(sec_ones)))
     print(time)
 
    

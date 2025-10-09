@@ -2,12 +2,12 @@
 
 def solve():
 # Ниже пишите решение задачи
-    num= int(input())
+    n= int(input())
     num_last_digit= num%10
     num_second_digit= num//10%10
     num_first_digit= num//100%10
-    n= num_last_digit + num_second_digit + num_first_digit
-    print(n)
+    num= num_last_digit + num_second_digit + num_first_digit
+    print(num)
 
     
 # Код ниже не трогать! он нужен для тестов
